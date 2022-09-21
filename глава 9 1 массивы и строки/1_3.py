@@ -22,4 +22,3 @@ class Word:
 if __name__ == '__main__':
     result = Word('Mr John Smith', 13)
     assert result.replace_letter() == 'Mr%20John%20Smith'
-    
