@@ -20,11 +20,7 @@ def palindrome(word: str) -> bool:
 
     word = word.lower().replace(' ', '')
 
-    num = len(list(filter(lambda x: x % 2 == 1, Counter(word).values())))
-
-    if len(word) % 2 == 1 and num > 1:
-        return False
-    elif len(word) % 2 == 0 and num > 0:
+    if len(list(filter(lambda x: x % 2 == 1, Counter(word).values()))) > 1:
         return False
     return True
 
